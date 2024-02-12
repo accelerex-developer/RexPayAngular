@@ -1,6 +1,6 @@
 # rexpay
 
-This is a JavaScript library for implementing XpressPay payment gateway
+This is a JavaScript library for implementing RexPay payment gateway
 
 ## Demo
 
@@ -42,7 +42,7 @@ import RexPay from 'rexpay';
 export class AppComponent {
   title = 'demoapp';
   paymentDescription = this.GetPaymentDescription();
-  PayWithXpressPay() {
+  PayWithRexPay() {
     const transactionId = 'Test' + Math.floor(Math.random() * 1000000);
     const rex = new RexPay();
     rex
@@ -97,7 +97,6 @@ To initialize the transaction, you'll need to pass information such as email, fi
 | amount	| `number`			   | undefined      | `true`  | Amount you want to debit customer e.g 1000.00, 10.00...
 | reference      | `string`             | undefined   | `true`  | Unique case sensitive transaction identification
 | userId | `string`             | undefined       | `true`  | Email address of customer or any user identification
-| publicKey       | `string`        | undefined | `true`  | Your public key from XpressPay.
 | currency      | `string`  |  `NGN`    | `true`   | Currency charge should be performed in. Allowed only `NGN`.
 | mode      | `string`  |  `Debug`    | `true`   | Allowed values are `Debug` or `Live`.
 | callBackUrl      | `string`  |  your current url page    | `false`   | CallbackUrl is the url you want your customer to be redirected to when payment is successful. The default url is the page url where customer intialized payment.

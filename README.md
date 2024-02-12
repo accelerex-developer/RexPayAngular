@@ -52,6 +52,7 @@ export class AppComponent {
         currency: "NGN",
         userId: "test@gmail.com",
         callbackUrl: "google.com",
+        mode: "Debug",
         metadata: {
           email: "test@gmail.com",
           customerName: "Test User",
